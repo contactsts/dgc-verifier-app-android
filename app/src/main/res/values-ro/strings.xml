@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Check DCC</string>
+    <string name="language_key">"ro"</string>
+
+    <string name="verifier_homescreen_header_title">EU DCC</string>
+    <string name="verifier_homescreen_title">Check</string>
+    <string name="verifier_homescreen_scan_button">Verificare</string>
+    <string name="verifier_homescreen_business_rules_button">Reguli naționale</string>
+
+    <string name="verifier_homescreen_pager_description_1">Scanează certificatul prezentat</string>
+    <string name="verifier_homescreen_pager_description_2">Certificatele sunt verificate automat</string>
+
+    <string name="verifier_title_qr_scan">Verificare</string>
+    <string name="verifier_title_settings">Setări</string>
+    <string name="verifier_title_privacy_policy">Politica de confidențialitate</string>
+    <string name="verifier_title_business_rules">Reguli naționale</string>
+
+    <string name="verifier_qr_scanner_scan_qr_text">Scanați codul QR pentru verificare</string>
+    <string name="verifier_qr_scanner_validate_with_country_rules">Alegeți țara pentru verificare utilizând regulile naționale de frontieră</string>
+    <string name="verifier_qr_scanner_validate_with_national_rules">Verificarea se realizează utilizând regulile interne</string>
+
+    <string name="select_country_business_rules">Alegeți țara pentru a vizualiza regulile naționale de verificare la intrarea în țară</string>
+    <string name="rule_identifier">Identificator</string>
+    <string name="rule_type">Tip</string>
+    <string name="rule_version">Versiune</string>
+    <string name="rule_schema_version">Versiune schemă</string>
+    <string name="rule_engine">Modul reguli</string>
+    <string name="rule_engine_version">Versiune modul reguli</string>
+    <string name="rule_certificate_type">Tip de certificat</string>
+    <string name="rule_description">Descriere</string>
+    <string name="rule_valid_from">Valabil de la</string>
+    <string name="rule_valid_to">Valabil până la</string>
+    <string name="rule_region">Regiune</string>
+
+    <string name="error_network_title">Eroare de conexiune</string>
+    <string name="error_network_text">Verificați conexiunea la internet.</string>
+    <string name="error_action_retry">Încercați din nou</string>
+    <string name="error_camera_permission_title">Camera nu poate fi accesată</string>
+    <string name="error_camera_permission_text">Aplicația necesită permisiunea de a accesa camera pentru a putea scana codul QR.</string>
+    <string name="error_action_change_settings">Setări</string>
+    <string name="error_title">Eroare</string>
+    <string name="error_invalid_qr_text">Cod QR invalid</string>
+    <string name="error_backend_synchronization_text">Aplicația necesită cel puțin o sincronizare cu Backend-ul național pentru a putea scana codul QR.</string>
+    <string name="error_action_settings">Setări</string>
+    <string name="error_action_ok">OK</string>
+
+    <string name="app_update_ready">O versiune nouă a aplicației poate fi instalată.</string>
+    <string name="app_update_confirm">Reîncărcare</string>
+
+    <string name="camera_permission_dialog_text">Aplicația necesită permisiunea de a accesa camera pentru a putea scana codul QR.</string>
+    <string name="camera_permission_dialog_action">Permiteți accesul la cameră</string>
+
+    <string name="tab_certificate_details">Certificat</string>
+    <string name="tab_business_rules_details">Reguli naționale</string>
+    <string name="business_rules_domestic">România (reguli interne)</string>
+
+    <string name="rule">Regulă</string>
+    <string name="result">Rezultat</string>
+    <string name="current">Curent</string>
+    <string name="passed">Validat</string>
+    <string name="failed">Eșuat</string>
+    <string name="open">Deschis</string>
+
+    <string name="cert_valid">Verificare cu succes</string>
+    <string name="cert_invalid">Verificare eșuată</string>
+    <string name="test_certificate_legal_notice">Certificatul de testare este valabil în conformitate cu legislația în vigoare.</string>
+
+    <string name="certificate_content_schema_not_valid">Certificatul este invalid (%1s).</string>
+    <string name="certificate_cryptographic_signature_not_valid">Semnătura criptografică este invalidă (%1s).</string>
+    <string name="certificate_cryptographic_signature_not_verifiable">Semnătura criptografică nu a putut fi verificată (%1s).</string>
+    <string name="certificate_cryptographic_signature_expired">Semnătura criptografică este expirată.</string>
+
+    <string name="certificate_vaccination_entry_date_in_future">Data de vaccinare din certificat este în viitor.</string>
+    <string name="certificate_test_entry_result_positive">Rezultatul testului din certificat este pozitiv.</string>
+    <string name="certificate_test_entry_test_date_in_future">Data testului din certificat este în viitor.</string>
+    <string name="certificate_recovery_entry_not_valid_so_far">Certificatul de recuperare nu este încă valid.</string>
+    <string name="certificate_recovery_entry_not_valid_anymore">Certificatul de recuperare nu mai este valid.</string>
+    <string name="certificate_rules_validation_failed">Certificatul nu respectă regulile naționale verificate.</string>
+
+    <string name="type_test">Test</string>
+    <string name="type_recovered">Rec</string>
+    <string name="type_vaccination">Vac</string>
+
+    <string name="standardised_family_name_title">Nume - standardizat</string>
+    <string name="standardised_given_name_title">Prenume - standardizat</string>
+    <string name="date_of_birth_title">Data de naștere</string>
+
+    <string name="person_full_name_placeholder">%1s %2s</string>
+
+    <string name="entry_additional_details">Detalii suplimentare</string>
+
+    <string name="vaccine_entry_disease_title">Boală sau agent vizat</string>
+    <string name="vaccine_entry_vaccine_title">Vaccin/profilaxie</string>
+    <string name="vaccine_entry_vaccine_medicinal_product_title">Vaccin</string>
+    <string name="vaccine_entry_vaccine_marketing_authorisation_title">Titularul autorizației de introducere pe piață sau producătorul vaccinului</string>
+    <string name="vaccine_entry_number_in_a_series_overall_number_of_doses_title">Numărul dintr-o serie de vaccinări / doze și numărul total de doze din serie</string>
+    <string name="vaccine_entry_date_of_vaccination_title">Data vaccinării</string>
+    <string name="vaccine_entry_member_state_of_vaccination_title">Statul membru de vaccinare</string>
+    <string name="vaccine_entry_certificate_issuer_title">Emitent certificat</string>
+
+    <string name="test_entry_disease_title">Boală sau agent vizat</string>
+    <string name="test_entry_type_of_test_title">Tipul testului</string>
+    <string name="test_entry_test_name_title">Numele testului (opțional pentru NAAT)</string>
+    <string name="test_entry_test_manufacturer_title">Producătorul testului (opțional pentru NAAT)</string>
+    <string name="test_entry_date_sample_collection_title">Data și ora colectării probei de testare</string>
+    <string name="test_entry_result_of_test_title">Rezultatul testului</string>
+    <string name="test_entry_testing_centre_title">Centrul sau instalația de testare</string>
+    <string name="test_entry_member_state_of_test_title">Statul membru al testului</string>
+    <string name="test_entry_certificate_issuer_title">Emitent certificat</string>
+
+    <string name="recovery_entry_disease_title">Boală sau agent vizat</string>
+    <string name="recovery_entry_date_of_first_positive_test_title">Data primului rezultat pozitiv al testului</string>
+    <string name="recovery_entry_member_state_of_test_title">Statul membru al testului</string>
+    <string name="recovery_entry_certificate_issuer_title">Emitent certificat</string>
+    <string name="recovery_entry_certificate_valid_from_title">Certificat valabil de la</string>
+    <string name="recovery_entry_certificate_valid_until_title">Certificat valabil până la (nu mai mult de 180 de zile de la data primului rezultat pozitiv al testului)</string>
+
+    <string name="entry_technical_details">Detalii tehnice</string>
+    <string name="entry_schema_version_title">Versiunea schemei</string>
+    <string name="entry_issuer_country_title">Emitent (iss)</string>
+    <string name="entry_issued_at_title">Hcert emis la (iat)</string>
+    <string name="entry_expires_at_title">Hcert expiră la (exp)</string>
+    <string name="entry_dsc_valid_from_title">DSC valabil din</string>
+    <string name="entry_dsc_valid_to_title">DSC valabil până la</string>
+    <string name="entry_certificate_id_title">Identificator unic al certificatului</string>
+
+    <string name="done">Terminat</string>
+    <string name="retry">Reîncercare</string>
+
+    <string name="options">Opțiuni</string>
+    <string name="preferences_language">Limbă</string>
+    <string name="preferences_about">Despre</string>
+    <string name="preferences_data_protection">Politică de confidențialitate și condiții de utilizare</string>
+    <string name="preferences_sync_public_keys">Sincronizare cu Backend-ul Național</string>
+    <string name="preferences_version">Versiune</string>
+    <string name="last_updated">Ultima sincronizare: %s</string>
+</resources>

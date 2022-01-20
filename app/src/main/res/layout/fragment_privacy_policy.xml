@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bottom_sheet_bg"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            app:layout_constraintTop_toTopOf="parent"
+            app:navigationIcon="@drawable/ic_close"
+            android:elevation="@dimen/toolbar_elevation"
+            app:title="@string/verifier_title_privacy_policy"
+            app:titleTextAppearance="@style/Dgc.ToolbarTitle"
+            app:titleTextColor="@color/grey" />
+
+        <FrameLayout
+            android:id="@+id/fragment_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <WebView
+                android:id="@+id/webViewPrivacyPolicy"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <androidx.core.widget.ContentLoadingProgressBar
+                android:id="@+id/progressPrivacyPolicy"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:indeterminateTint="@color/yellow" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+</layout>

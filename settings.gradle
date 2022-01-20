@@ -1,0 +1,2 @@
+rootProject.name = "dgc-verifier-app-android"
+include ':app'

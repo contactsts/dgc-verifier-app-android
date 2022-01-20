@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_marginTop="@dimen/spacing_small"
+    android:layout_marginBottom="@dimen/spacing_small"
+    android:paddingStart="@dimen/spacing_small"
+    android:paddingEnd="@dimen/spacing_small"
+    android:paddingTop="@dimen/spacing_small"
+    android:paddingBottom="@dimen/spacing_small">
+
+    <com.google.android.material.textview.MaterialTextView
+        style="@style/Dgc.Text.Bold.Grey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_small"
+        android:text="@string/rule_identifier" />
+
+    <TextView
+        android:id="@+id/identifier"
+        style="@style/Dgc.Text.Small"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Identifier" />
+
+    <com.google.android.material.textview.MaterialTextView
+        style="@style/Dgc.Text.Bold.Grey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_small"
+        android:text="@string/rule_certificate_type" />
+
+    <TextView
+        android:id="@+id/certificate_type"
+        style="@style/Dgc.Text.Small"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Certificate type" />
+
+    <com.google.android.material.textview.MaterialTextView
+        style="@style/Dgc.Text.Bold.Grey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_small"
+        android:text="@string/rule_description" />
+
+    <TextView
+        android:id="@+id/description"
+        style="@style/Dgc.Text.Small"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Description" />
+
+    <com.google.android.material.textview.MaterialTextView
+        style="@style/Dgc.Text.Bold.Grey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_small"
+        android:text="@string/rule_valid_from" />
+
+    <TextView
+        android:id="@+id/valid_from"
+        style="@style/Dgc.Text.Small"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Valid from" />
+
+    <com.google.android.material.textview.MaterialTextView
+        style="@style/Dgc.Text.Bold.Grey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_small"
+        android:text="@string/rule_valid_to" />
+
+    <TextView
+        android:id="@+id/valid_to"
+        style="@style/Dgc.Text.Small"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Valid to" />
+
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CountryPicker">
+        <attr name="cp_default_country" format="string" />
+        <attr name="cp_use_emoji_compat" format="boolean" />
+        <attr name="cp_show_flag" format="boolean" />
+        <attr name="cp_show_country_code" format="boolean" />
+        <attr name="cp_show_arrow" format="boolean" />
+        <attr name="cp_dialog_show_title" format="boolean" />
+        <attr name="cp_dialog_title" format="string|reference" />
+        <attr name="cp_dialog_show_search" format="boolean" />
+        <attr name="cp_dialog_search_hint" format="string|reference" />
+        <attr name="cp_dialog_empty_view_text" format="string|reference" />
+        <attr name="cp_dialog_priority_countries" format="string" />
+        <attr name="cp_dialog_include_countries" format="string" />
+        <attr name="cp_dialog_exclude_countries" format="string" />
+        <attr name="cp_dialog_country_text_appearance" format="reference" />
+        <attr name="cp_dialog_country_code_text_appearance" format="reference" />
+    </declare-styleable>
+
+</resources>

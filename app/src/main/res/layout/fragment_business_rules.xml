@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bottom_sheet_bg"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            app:layout_constraintTop_toTopOf="parent"
+            app:navigationIcon="@drawable/ic_close"
+            android:elevation="@dimen/toolbar_elevation"
+            app:title="@string/verifier_title_business_rules"
+            app:titleTextAppearance="@style/Dgc.ToolbarTitle"
+            app:titleTextColor="@color/grey" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/fragment_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="@dimen/default_margin"
+            android:paddingVertical="@dimen/spacing_medium"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/country_picker_label"
+                style="@style/Dgc.Text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin"
+                app:layout_constraintTop_toTopOf="parent"
+                android:text="@string/select_country_business_rules" />
+
+            <ro.sts.dgc.ui.countrypicker.CountryPicker
+                android:id="@+id/country_picker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin"
+                app:cp_dialog_priority_countries="ro"
+                app:layout_constraintTop_toBottomOf="@+id/country_picker_label"
+                app:layout_constraintStart_toStartOf="parent"
+                app:cp_use_emoji_compat="true" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view_rules_list"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/default_margin_top"
+                app:layout_constraintTop_toBottomOf="@+id/country_picker"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:overScrollMode="never" />
+
+            <LinearLayout
+                android:id="@+id/progress_container"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@color/white"
+                android:gravity="center"
+                app:layout_constraintTop_toBottomOf="@+id/country_picker"
+                app:layout_constraintBottom_toBottomOf="parent"
+                tools:visibility="gone">
+
+                <ProgressBar
+                    android:id="@+id/progress_bar"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:indeterminateTint="@color/yellow" />
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

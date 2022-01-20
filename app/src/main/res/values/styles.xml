@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Dgc.Button" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@null</item>
+        <item name="android:textColor">@color/green_10</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">@dimen/text_size_normal</item>
+        <item name="android:fontFamily">@font/inter</item>
+        <item name="fontFamily">@font/inter</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">@drawable/bg_button_default</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:height">@dimen/button_height</item>
+        <item name="android:paddingStart">@dimen/spacing_very_large</item>
+        <item name="android:paddingEnd">@dimen/spacing_very_large</item>
+    </style>
+
+    <style name="Dgc.Button.Borderless" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/green_10</item>
+        <item name="android:letterSpacing">0.09</item>
+        <item name="android:textSize">@dimen/text_size_normal</item>
+        <item name="android:fontFamily">@font/inter</item>
+        <item name="fontFamily">@font/inter</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:foreground">@drawable/ripple_rounded_button</item>
+        <item name="rippleColor">@android:color/transparent</item>
+        <item name="android:paddingBottom">@dimen/spacing_medium_small</item>
+        <item name="android:paddingTop">@dimen/spacing_medium_small</item>
+        <item name="android:paddingStart">@dimen/spacing_medium_large</item>
+        <item name="android:paddingEnd">@dimen/spacing_medium_large</item>
+    </style>
+
+    <style name="Dgc.Button.Borderless.Black">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="Dgc.Button.Borderless.Black.NoCaps">
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="Dgc.ToolbarTitle" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textAllCaps">true</item>
+        <item name="android:fontFamily">@font/inter</item>
+        <item name="fontFamily">@font/inter</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/text_size_normal</item>
+        <item name="android:letterSpacing">0.125</item>
+    </style>
+
+    <style name="Dgc.FloatingImageButton" parent="Widget.AppCompat.ImageButton">
+        <item name="android:background">@drawable/bg_floating_button_blue</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:height">@dimen/floating_button_height</item>
+        <item name="android:width">@dimen/floating_button_height</item>
+        <item name="android:elevation">@dimen/floating_button_elevation</item>
+        <item name="android:paddingBottom">@dimen/spacing_small</item>
+        <item name="android:paddingTop">@dimen/spacing_small</item>
+        <item name="android:paddingStart">@dimen/spacing_huge</item>
+        <item name="android:paddingEnd">@dimen/spacing_huge</item>
+    </style>
+
+    <style name="Dgc.FloatingImageButton.BlackWhite">
+        <item name="android:background">@drawable/bg_floating_button_black_white</item>
+    </style>
+
+    <style name="Dgc.Card" parent="Widget.MaterialComponents.CardView">
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:foreground">?android:attr/selectableItemBackground</item>
+        <item name="android:minHeight">@dimen/button_height</item>
+        <item name="cardElevation">@dimen/default_elevation</item>
+        <item name="cardCornerRadius">@dimen/button_radius</item>
+        <item name="cardBackgroundColor">@color/white</item>
+    </style>
+
+    <style name="Dgc.Card.Flat">
+        <item name="android:minHeight">0dp</item>
+        <item name="android:focusable">false</item>
+        <item name="android:clickable">false</item>
+        <item name="cardElevation">0dp</item>
+    </style>
+
+    <style name="Dgc.Text" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/text_size_normal</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/inter</item>
+        <item name="fontFamily">@font/inter</item>
+        <item name="lineHeight">@dimen/text_line_height_normal</item>
+    </style>
+
+    <style name="Dgc.Text.Small">
+        <item name="android:textSize">@dimen/text_size_small</item>
+    </style>
+
+    <style name="Dgc.Text.Small.Bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Dgc.Text.Grey">
+        <item name="android:textColor">@color/grey</item>
+    </style>
+
+    <style name="Dgc.Text.Bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Dgc.Text.Bold.Emphasized">
+        <item name="android:textSize">@dimen/text_size_emphasize</item>
+    </style>
+
+    <style name="Dgc.Text.Bold.Error">
+        <item name="android:textColor">@color/red_error</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="Dgc.Text.Bold.White">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Dgc.Text.Bold.Grey">
+        <item name="android:textColor">@color/grey</item>
+    </style>
+
+    <style name="Dgc.Text.Bold.Title">
+        <item name="android:textSize">@dimen/text_size_large</item>
+        <item name="lineHeight">@dimen/text_line_height_large</item>
+    </style>
+
+    <style name="Dgc.Text.Bold.Lead">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:letterSpacing">0.125</item>
+    </style>
+
+    <style name="Dgc.Text.Bold.Lead.Grey">
+        <item name="android:textColor">@color/grey</item>
+    </style>
+
+    <style name="TextAppearance.Dgc.Toggle" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:clickable">false</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="backgroundTint">@color/btn_toggle_selector</item>
+        <item name="strokeColor">@color/white</item>
+        <item name="strokeWidth">@dimen/mtrl_btn_stroke_size</item>
+        <item name="android:fontFamily">@font/inter</item>
+        <item name="fontFamily">@font/inter</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ItemBackground" parent="android:Widget">
+        <item name="colorControlHighlight">@color/yellow_ripple</item>
+    </style>
+
+    <style name="NavigationButtonStyle">
+        <item name="android:theme">@style/ItemBackground</item>
+        <item name="android:minWidth">56dp</item>
+        <item name="android:minHeight">?attr/actionBarSize</item>
+        <item name="android:scaleType">center</item>
+        <item name="android:background">?selectableItemBackgroundBorderless</item>
+    </style>
+
+    <!-- Roboto font style -->
+    <style name="RobotoRegularStyle">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="fontFamily">@font/roboto_regular</item>
+    </style>
+
+    <style name="RobotoMediumStyle">
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="fontFamily">@font/roboto_medium</item>
+    </style>
+
+    <style name="RobotoBoldStyle">
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="fontFamily">@font/roboto_bold</item>
+    </style>
+
+    <style name="RobotoRegularStyle.VerySmall">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="RobotoRegularStyle.Small">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="RobotoRegularStyle.Medium">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="RobotoMediumStyle.VerySmall">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="RobotoMediumStyle.Small">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="RobotoMediumStyle.Medium">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="RobotoMediumStyle.Large">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="RobotoMediumStyle.ExtraLarge">
+        <item name="android:textSize">24sp</item>
+    </style>
+
+</resources>

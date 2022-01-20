@@ -1,0 +1,52 @@
+{
+  "origin": "RO",
+  "versions": {
+    "default": {
+      "privacyUrl": "https://certificat-covid.gov.ro/legal-notices/mobile-apps",
+      "context": {
+        "url": "https://preprod-dgc.gov.ro/context",
+        "pubKeys": [
+          "eGKneJ4SI4PlUhP5xS7h83JYv62u1aBMkZWQ0gTrarI="
+        ]
+      },
+      "endpoints": {
+        "dsc.certificate-status": {
+          "url": "https://preprod-dgc.gov.ro/dsc/certificate-status",
+          "pubKeys": [
+            "eGKneJ4SI4PlUhP5xS7h83JYv62u1aBMkZWQ0gTrarI="
+          ]
+        },
+        "dsc.certificate-update": {
+          "url": "https://preprod-dgc.gov.ro/dsc/certificate-update",
+          "pubKeys": [
+            "eGKneJ4SI4PlUhP5xS7h83JYv62u1aBMkZWQ0gTrarI="
+          ]
+        },
+        "rules": {
+          "url": "https://preprod-dgc.gov.ro/rules",
+          "pubKeys": [
+            "eGKneJ4SI4PlUhP5xS7h83JYv62u1aBMkZWQ0gTrarI="
+          ]
+        },
+        "rules.national": {
+          "url": "https://preprod-dgc.gov.ro/rules/national",
+          "pubKeys": [
+            "eGKneJ4SI4PlUhP5xS7h83JYv62u1aBMkZWQ0gTrarI="
+          ]
+        },
+        "countryList": {
+          "url": "https://preprod-dgc.gov.ro/countrylist",
+          "pubKeys": [
+            "eGKneJ4SI4PlUhP5xS7h83JYv62u1aBMkZWQ0gTrarI="
+          ]
+        },
+        "valuesets": {
+          "url": "https://preprod-dgc.gov.ro/valuesets",
+          "pubKeys": [
+            "eGKneJ4SI4PlUhP5xS7h83JYv62u1aBMkZWQ0gTrarI="
+          ]
+        }
+      }
+    }
+  }
+}

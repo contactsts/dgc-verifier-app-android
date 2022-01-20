@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="black_90">#E6000000</color>
+    <color name="black_80">#CC000000</color>
+    <color name="black_70">#B3000000</color>
+    <color name="black_60">#99000000</color>
+    <color name="black_50">#80000000</color>
+    <color name="black_10">#1A000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="blue">#243784</color>
+    <color name="blue_dark">#273277</color>
+
+    <color name="yellow">#FFEC00</color>
+    <color name="green">#007361</color>
+    <color name="green_10">#117b5d</color>
+    <color name="greenish">#def3f0</color>
+    <color name="red">#DA2131</color>
+    <color name="red_error">#e20008</color>
+    <color name="redish">#fae2ea</color>
+    <color name="orange">#FFA500</color>
+    <color name="orangish">#33FFA500</color>
+
+    <color name="grey">#757575</color>
+    <color name="grey_75">#707070</color>
+    <color name="grey_50">#9F9F9F</color>
+    <color name="grey_90">#ECECEC</color>
+    <color name="grey_100">#404040</color>
+    <color name="greyish">#ececec</color>
+
+    <color name="black_ripple">#26000000</color>
+    <color name="yellow_ripple">#26FFEC00</color>
+
+    <color name="hcert_good">@color/green</color>
+    <color name="hcert_warning">@color/orange</color>
+    <color name="hcert_fail">@color/red</color>
+
+    <color name="text_dark_gray">#424242</color>
+    <!-- Use in setting screen. Preference category title color -->
+    <color name="text_gray_transparency_55">#8C5F6368</color>
+    <!-- Use in setting screen, Preference item summary text color -->
+    <color name="text_gray_transparency_60">#99424242</color>
+</resources>

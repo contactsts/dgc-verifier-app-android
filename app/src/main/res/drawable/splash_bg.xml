@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:opacity="opaque">
+
+    <item android:drawable="@color/yellow" />
+
+    <item
+        android:width="150dp"
+        android:height="209.83233dp"
+        android:drawable="@drawable/ic_logo"
+        android:gravity="center|top"
+        android:top="150dp" />
+
+    <item
+        android:height="150dp"
+        android:drawable="@color/white"
+        android:gravity="bottom" />
+
+    <item
+        android:width="265dp"
+        android:height="60dp"
+        android:bottom="50dp"
+        android:drawable="@drawable/ic_logo_eu_ro"
+        android:gravity="bottom|center" />
+</layer-list>

@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <com.journeyapps.barcodescanner.BarcodeView
+        android:id="@+id/barcode_scanner"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0" />
+
+    <FrameLayout
+        android:id="@+id/toolbar_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black_80"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/header_height_default"
+            android:layout_gravity="top"
+            android:background="@null"
+            app:navigationIcon="@drawable/ic_close_white"
+            app:title="@string/verifier_title_qr_scan"
+            app:titleTextAppearance="@style/Dgc.ToolbarTitle"
+            app:titleTextColor="@color/white" />
+    </FrameLayout>
+
+    <View
+        android:id="@+id/qr_code_scanner_milk_top"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/black_60"
+        app:layout_constraintBottom_toTopOf="@id/qr_code_scanner_camera_hole"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_group" />
+
+    <View
+        android:id="@+id/qr_code_scanner_milk_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/black_60"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/qr_code_scanner_camera_hole" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/black_60"
+        app:layout_constraintBottom_toTopOf="@id/qr_code_scanner_milk_bottom"
+        app:layout_constraintEnd_toStartOf="@id/qr_code_scanner_camera_hole"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/qr_code_scanner_milk_top" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/black_60"
+        app:layout_constraintBottom_toTopOf="@id/qr_code_scanner_milk_bottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/qr_code_scanner_camera_hole"
+        app:layout_constraintTop_toBottomOf="@id/qr_code_scanner_milk_top" />
+
+    <TextView
+        android:id="@+id/invalid_code"
+        style="@style/Dgc.Text.Bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/spacing_large"
+        android:background="@drawable/bg_rect_rounded_small"
+        android:drawablePadding="@dimen/spacing_small"
+        android:paddingVertical="@dimen/spacing_small"
+        android:paddingStart="@dimen/spacing_small"
+        android:paddingEnd="@dimen/spacing_large"
+        android:text="@string/error_invalid_qr_text"
+        android:visibility="invisible"
+        app:drawableStartCompat="@drawable/ic_scanner_alert"
+        app:layout_constraintBottom_toTopOf="@id/camera_preview_container"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_group"
+        tools:visibility="visible" />
+
+    <View
+        android:id="@+id/qr_code_scanner_camera_hole"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/spacing_larger"
+        app:layout_constraintBottom_toBottomOf="@id/camera_preview_container"
+        app:layout_constraintEnd_toEndOf="@id/camera_preview_container"
+        app:layout_constraintStart_toStartOf="@id/camera_preview_container"
+        app:layout_constraintTop_toTopOf="@id/camera_preview_container" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/camera_preview_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="@dimen/spacing_huge"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <View
+            android:id="@+id/qr_code_scanner_top_right_indicator"
+            android:layout_width="@dimen/qr_scanner_indicator_size"
+            android:layout_height="@dimen/qr_scanner_indicator_size"
+            android:background="@drawable/qr_scanner_top_right"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/qr_code_scanner_top_left_indicator"
+            android:layout_width="@dimen/qr_scanner_indicator_size"
+            android:layout_height="@dimen/qr_scanner_indicator_size"
+            android:background="@drawable/qr_scanner_top_left"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/qr_code_scanner_bottom_left_indicator"
+            android:layout_width="@dimen/qr_scanner_indicator_size"
+            android:layout_height="@dimen/qr_scanner_indicator_size"
+            android:background="@drawable/qr_scanner_bottom_left"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <View
+            android:id="@+id/qr_code_scanner_bottom_right_indicator"
+            android:layout_width="@dimen/qr_scanner_indicator_size"
+            android:layout_height="@dimen/qr_scanner_indicator_size"
+            android:background="@drawable/qr_scanner_bottom_right"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/explanation_qr"
+        style="@style/Dgc.Text.Bold.White"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_small"
+        android:layout_marginHorizontal="@dimen/spacing_small"
+        android:gravity="center"
+        android:text="@string/verifier_qr_scanner_scan_qr_text"
+        app:layout_constraintEnd_toEndOf="@id/qr_code_scanner_camera_hole"
+        app:layout_constraintStart_toStartOf="@id/qr_code_scanner_camera_hole"
+        app:layout_constraintTop_toBottomOf="@id/camera_preview_container" />
+
+    <TextView
+        android:id="@+id/explanation_business_rules"
+        style="@style/Dgc.Text.Bold.White"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_margin"
+        android:layout_marginHorizontal="@dimen/spacing_small"
+        android:gravity="center"
+        android:text="@string/verifier_qr_scanner_validate_with_country_rules"
+        app:layout_constraintEnd_toEndOf="@id/qr_code_scanner_camera_hole"
+        app:layout_constraintStart_toStartOf="@id/qr_code_scanner_camera_hole"
+        app:layout_constraintTop_toBottomOf="@id/explanation_qr" />
+
+    <ro.sts.dgc.ui.countrypicker.CountryPicker
+        android:id="@+id/country_picker"
+        android:background="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_margin"
+        app:layout_constraintEnd_toEndOf="@id/qr_code_scanner_camera_hole"
+        app:layout_constraintStart_toStartOf="@id/qr_code_scanner_camera_hole"
+        app:layout_constraintTop_toBottomOf="@id/explanation_business_rules"
+        app:cp_dialog_priority_countries="ro"
+        app:cp_default_country="ro"
+        app:cp_use_emoji_compat="true" />
+
+    <ImageButton
+        android:id="@+id/flash_button"
+        style="@style/Dgc.FloatingImageButton.BlackWhite"
+        android:layout_width="@dimen/floating_button_height"
+        android:layout_height="@dimen/floating_button_height"
+        android:layout_margin="@dimen/spacing_large"
+        android:elevation="@dimen/floating_button_elevation"
+        android:src="@drawable/ic_light_off"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageButton
+        android:id="@+id/national_rules_button"
+        style="@style/Dgc.FloatingImageButton.BlackWhite"
+        android:layout_width="@dimen/floating_button_height"
+        android:layout_height="@dimen/floating_button_height"
+        android:layout_marginHorizontal="@dimen/spacing_large"
+        android:layout_marginBottom="@dimen/spacing_small"
+        android:elevation="@dimen/floating_button_elevation"
+        android:src="@drawable/ic_map_24"
+        app:layout_constraintBottom_toTopOf="@id/flash_button"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/error_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_group">
+
+        <include
+            layout="@layout/item_error_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_huge"
+            android:layout_marginStart="@dimen/spacing_medium"
+            android:layout_marginEnd="@dimen/spacing_medium" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

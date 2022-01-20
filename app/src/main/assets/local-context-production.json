@@ -1,0 +1,52 @@
+{
+  "origin": "RO",
+  "versions": {
+    "default": {
+      "privacyUrl": "https://certificat-covid.gov.ro/legal-notices/mobile-apps",
+      "context": {
+        "url": "https://dgc.gov.ro/context",
+        "pubKeys": [
+          "UEwMMwnAbQ/XBZU/XsljTE/l92fWnN8JOask3cXiwVg="
+        ]
+      },
+      "endpoints": {
+        "dsc.certificate-status": {
+          "url": "https://dgc.gov.ro/dsc/certificate-status",
+          "pubKeys": [
+            "UEwMMwnAbQ/XBZU/XsljTE/l92fWnN8JOask3cXiwVg="
+          ]
+        },
+        "dsc.certificate-update": {
+          "url": "https://dgc.gov.ro/dsc/certificate-update",
+          "pubKeys": [
+            "UEwMMwnAbQ/XBZU/XsljTE/l92fWnN8JOask3cXiwVg="
+          ]
+        },
+        "rules": {
+          "url": "https://dgc.gov.ro/rules",
+          "pubKeys": [
+            "UEwMMwnAbQ/XBZU/XsljTE/l92fWnN8JOask3cXiwVg="
+          ]
+        },
+        "rules.national": {
+          "url": "https://dgc.gov.ro/rules/national",
+          "pubKeys": [
+            "UEwMMwnAbQ/XBZU/XsljTE/l92fWnN8JOask3cXiwVg="
+          ]
+        },
+        "countryList": {
+          "url": "https://dgc.gov.ro/countrylist",
+          "pubKeys": [
+            "UEwMMwnAbQ/XBZU/XsljTE/l92fWnN8JOask3cXiwVg="
+          ]
+        },
+        "valuesets": {
+          "url": "https://dgc.gov.ro/valuesets",
+          "pubKeys": [
+            "UEwMMwnAbQ/XBZU/XsljTE/l92fWnN8JOask3cXiwVg="
+          ]
+        }
+      }
+    }
+  }
+}

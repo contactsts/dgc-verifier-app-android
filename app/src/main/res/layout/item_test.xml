@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/recycler_view_certificate_entries"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:background="@color/white">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/target_title"
+        style="@style/Dgc.Text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/vaccine_entry_disease_title" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/target_value"
+        style="@style/Dgc.Text.Bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="COVID-19" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/type_title"
+        style="@style/Dgc.Text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/test_entry_type_of_test_title" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/type_value"
+        style="@style/Dgc.Text.Bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Nucleic acid amplification with probe detection" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/test_name_title"
+        style="@style/Dgc.Text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/test_entry_test_name_title" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/test_name_value"
+        style="@style/Dgc.Text.Bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Lorem ipsum dolor" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/manufacturer_title"
+        style="@style/Dgc.Text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/test_entry_test_manufacturer_title" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/manufacturer_value"
+        style="@style/Dgc.Text.Bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Beijing Lepu Medical Technology Co., Ltd, SARS-CoV-2 Antigen Rapid Test Kit" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/date_time_sample_title"
+        style="@style/Dgc.Text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/test_entry_date_sample_collection_title" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/date_time_sample_value"
+        style="@style/Dgc.Text.Bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Feb 26, 1998 12:34:56 (UTC)" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/result_positive_title"
+        style="@style/Dgc.Text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/test_entry_result_of_test_title" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/result_positive_value"
+        style="@style/Dgc.Text.Bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Negative" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/testing_centre_title"
+        style="@style/Dgc.Text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/test_entry_testing_centre_title" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/testing_centre_value"
+        style="@style/Dgc.Text.Bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Testing centre 1" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/country_title"
+        style="@style/Dgc.Text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/test_entry_member_state_of_test_title" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/country_value"
+        style="@style/Dgc.Text.Bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Romania" />
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/certificate_issuer_title"
+        style="@style/Dgc.Text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/test_entry_certificate_issuer_title" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/certificate_issuer_value"
+        style="@style/Dgc.Text.Bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Ministry of Health" />
+
+</LinearLayout>
