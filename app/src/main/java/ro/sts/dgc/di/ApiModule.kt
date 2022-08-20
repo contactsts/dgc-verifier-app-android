@@ -83,7 +83,7 @@ object ApiModule {
     internal fun provideOkhttpClient(cache: Cache, interceptor: Interceptor, certificatePinner: CertificatePinner): OkHttpClient {
         val httpClient = getHttpClient(cache).apply {
             addInterceptor(HeaderInterceptor())
-            certificatePinner(certificatePinner)
+            //certificatePinner(certificatePinner)
         }
         addLogging(httpClient)
 
